@@ -2,22 +2,12 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
 import MenuCard from '@/components/MenuCard';
 import HeroSlideshow from '@/components/HeroSlideshow';
 import ScrollReveal from '@/components/ScrollReveal';
 import { ArrowRight, UtensilsCrossed, Truck, CalendarCheck, Star } from 'lucide-react';
 
 export default function HomeClient({ featured }) {
-  const router = useRouter();
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      router.push('/menu');
-    }, 10000);
-    return () => clearTimeout(timer);
-  }, [router]);
 
   return (
     <div>
