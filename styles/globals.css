@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f1014;
+  color: #f6f6f7;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f0c94f 0%, #d4a017 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #f0c94f 0%, #d4a017 100%);
+  color: #0f1014;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 160, 23, 0.35);
+}
+
+.btn-outline-gold {
+  border: 1px solid #d4a017;
+  color: #f0c94f;
+  font-weight: 600;
+  padding: 0.75rem 1.75rem;
+  border-radius: 0.5rem;
+  transition: all 0.25s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-outline-gold:hover {
+  background: rgba(212, 160, 23, 0.1);
+}
+
+.card-charcoal {
+  background-color: #1a1c21;
+  border: 1px solid #26282f;
+  border-radius: 0.75rem;
+}
+
+.input-dark {
+  background-color: #1a1c21;
+  border: 1px solid #363a44;
+  color: #f6f6f7;
+  border-radius: 0.5rem;
+  padding: 0.65rem 1rem;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+.input-dark:focus {
+  outline: none;
+  border-color: #d4a017;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f1014;
+}
+::-webkit-scrollbar-thumb {
+  background: #4a4f5c;
+  border-radius: 4px;
+}
